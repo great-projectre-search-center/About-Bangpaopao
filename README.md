@@ -22,7 +22,7 @@
 
 ### （一）技术栈
 
-
+WXML+WXSS+JS,Vant,Vue.js,SpringBoot,MySQL,Redis,RabbitMQ,Nginx,Tomcat等
 
 ### （二）架构图
 
