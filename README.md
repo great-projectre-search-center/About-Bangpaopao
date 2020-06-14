@@ -30,29 +30,33 @@
 
 ### （三）实体属性
 
+
+
 ### （四）ER图示
+
+
 
 ### （五）数据库表的设计
 
 #### 1.微信用户WxAccount
 
-|      字段名      | 数据类型 | 数据属性 |         字段说明         | 备注 |      |
-| :--------------: | :------: | :------: | :----------------------: | :--: | ---- |
-|       uid        |   INT    | NOT NULL |          用户id          |      |      |
-|     open_id      | VARCHAR  | NOT NULL | 普通用户的一个唯一的标识 |      |      |
-|   session_key    | VARCHAR  | NOT NULL |                          |      |      |
-|    nick_name     | VARCHAR  | NOT NULL |           昵称           |      |      |
-| encoded_password | VARCHAR  | NOT NULL |        加密的密码        |      |      |
-|      gender      | VARCHAR  |   NULL   |           性别           |      |      |
-|     country      | VARCHAR  |   NULL   |           国家           |      |      |
-|     province     | VARCHAR  |   NULL   |           省份           |      |      |
-|       city       | VARCHAR  |   NULL   |           城市           |      |      |
-|    avatar_url    | VARCHAR  |   NULL   |         头像地址         |      |      |
-|   created_user   | VARCHAR  | NOT NULL |       日志：创建人       |      |      |
-|   created_time   | DATETIME | NOT NULL |      日志：创建时间      |      |      |
-|  modified_user   | VARCHAR  | NOT NULL |       日志：修改人       |      |      |
-|  modified_time   | DATETIME | NOT NULL |      日志：修改时间      |      |      |
-|                  |          |          |                          |      |      |
+|      字段名      | 数据类型 | 数据属性 |         字段说明         | 备注 |
+| :--------------: | :------: | :------: | :----------------------: | :--: |
+|       uid        |   INT    | NOT NULL |          用户id          |      |
+|     open_id      | VARCHAR  | NOT NULL | 普通用户的一个唯一的标识 |      |
+|   session_key    | VARCHAR  | NOT NULL |                          |      |
+|    nick_name     | VARCHAR  | NOT NULL |           昵称           |      |
+| encoded_password | VARCHAR  | NOT NULL |        加密的密码        |      |
+|      gender      | VARCHAR  |   NULL   |           性别           |      |
+|     country      | VARCHAR  |   NULL   |           国家           |      |
+|     province     | VARCHAR  |   NULL   |           省份           |      |
+|       city       | VARCHAR  |   NULL   |           城市           |      |
+|    avatar_url    | VARCHAR  |   NULL   |         头像地址         |      |
+|   created_user   | VARCHAR  | NOT NULL |       日志：创建人       |      |
+|   created_time   | DATETIME | NOT NULL |      日志：创建时间      |      |
+|  modified_user   | VARCHAR  | NOT NULL |       日志：修改人       |      |
+|  modified_time   | DATETIME | NOT NULL |      日志：修改时间      |      |
+
 
 
 
@@ -73,10 +77,7 @@
 |  created_time  | DATETIME | NOT NULL | 日志：创建时间 |      |
 | modified_user  | VARCHAR  | NOT NULL |  日志：修改人  |      |
 | modified_time  | DATETIME | NOT NULL | 日志：修改时间 |      |
-|                |          |          |                |      |
-|                |          |          |                |      |
-|                |          |          |                |      |
-|                |          |          |                |      |
+
 
 
 
@@ -104,13 +105,10 @@
 |        aid        |   INT    |   NULL   |     评价id     |                    后期评价后会生成                     |
 |      reward       |   INT    | NOT NULL |    奖励积分    |                   根据距离和价值决定                    |
 |      status       |   INT    | NOT NULL |    订单状态    | 0未接单,1已接单,2送货中,3已接收,4已评价,5已取消,6已删除 |
-|                   |          |          |                |                                                         |
 |   created_user    | VARCHAR  | NOT NULL |  日志：创建人  |                                                         |
 |   created_time    | DATETIME | NOT NULL | 日志：创建时间 |                                                         |
 |   modified_user   | VARCHAR  | NOT NULL |  日志：修改人  |                                                         |
 |   modified_time   | DATETIME | NOT NULL | 日志：修改时间 |                                                         |
-|                   |          |          |                |                                                         |
-|                   |          |          |                |                                                         |
 
 
 
@@ -126,9 +124,6 @@
 | created_time  | DATETIME | NOT NULL | 日志：创建时间 |                                                |
 | modified_user | VARCHAR  | NOT NULL |  日志：修改人  |                                                |
 | modified_time | DATETIME | NOT NULL | 日志：修改时间 |                                                |
-|               |          |          |                |                                                |
-|               |          |          |                |                                                |
-|               |          |          |                |                                                |
 
 
 
@@ -146,7 +141,7 @@
 | created_time  | DATETIME | NOT NULL | 日志：创建时间 |      |
 | modified_user | VARCHAR  | NOT NULL |  日志：修改人  |      |
 | modified_time | DATETIME | NOT NULL | 日志：修改时间 |      |
-|               |          |          |                |      |
+
 
 
 
@@ -165,8 +160,7 @@
 | created_time  | DATETIME | NOT NULL | 日志：创建时间 |      |
 | modified_user | VARCHAR  | NOT NULL |  日志：修改人  |      |
 | modified_time | DATETIME | NOT NULL | 日志：修改时间 |      |
-|               |          |          |                |      |
-|               |          |          |                |      |
+
 
 
 
@@ -180,13 +174,11 @@
 |    matter     | VARCHAR  | NOT NULL |      事情      |      |
 |    changed    |   INT    | NOT NULL |      变化      |      |
 |    reward     |   INT    | NOT NULL |    剩余积分    |      |
-|               |          |          |                |      |
 | created_user  | VARCHAR  | NOT NULL |  日志：创建人  |      |
 | created_time  | DATETIME | NOT NULL | 日志：创建时间 |      |
 | modified_user | VARCHAR  | NOT NULL |  日志：修改人  |      |
 | modified_time | DATETIME | NOT NULL | 日志：修改时间 |      |
-|               |          |          |                |      |
-|               |          |          |                |      |
+
 
 
 
@@ -266,10 +258,6 @@
 
 
 
-
-
-
-
 #### 地址管理:
 
 ##### 1.添加新的收货地址
@@ -321,8 +309,6 @@
 | 传入 api 的参数  |                      Integer aid 地址id                      |
 |   返回数据格式   |                             Json                             |
 | 返回数据格式样例 |                                                              |
-
-
 
 
 
@@ -488,7 +474,7 @@
 
 #### 通知管理：
 
-##### 1.1获取全部消息通知
+##### 1获取全部消息通知
 
 |       URI        | /notification/{openid}/getnotification |
 | :--------------: | :------------------------------------: |
@@ -498,7 +484,7 @@
 |   返回数据格式   |                  Json                  |
 | 返回数据格式样例 |                                        |
 
-##### 1.2获取某用户的全部系统通知
+##### 2获取某用户的全部系统通知
 
 |       URI        | /notification/{openid}/getsystemnotification |
 | :--------------: | :------------------------------------------: |
@@ -508,7 +494,7 @@
 |   返回数据格式   |                     Json                     |
 | 返回数据格式样例 |                                              |
 
-##### 2.获取一条消息通知
+##### 3.获取一条消息通知
 
 |       URI        |   /notification/{openid}/getnotification/{notificationid}    |
 | :--------------: | :----------------------------------------------------------: |
@@ -518,7 +504,7 @@
 |   返回数据格式   |                             Json                             |
 | 返回数据格式样例 |                                                              |
 
-##### 3.删除通知
+##### 4.删除通知
 
 |       URI        |  /notification/{openid}/deletenotification/{notificationid}  |
 | :--------------: | :----------------------------------------------------------: |
@@ -528,7 +514,7 @@
 |   返回数据格式   |                             Json                             |
 | 返回数据格式样例 |                                                              |
 
-##### 4.发送通知
+##### 5.发送通知
 
 |       URI        |    /notification/{fromopenid}/postnotification/toopenid/     |
 | :--------------: | :----------------------------------------------------------: |
@@ -540,17 +526,15 @@
 
 
 
-
-
 #### 用户反馈
 
-|       URI        |               /feedback/               |
-| :--------------: | :------------------------------------: |
-|     作用描述     | 搞笑的用户反馈，参考王者荣耀的举报机制 |
-|     请求方式     |                  GET                   |
-| 传入 api 的参数  |                   无                   |
-|   返回数据格式   |                  Json                  |
-| 返回数据格式样例 |                                        |
+|       URI        |              /feedback/              |
+| :--------------: | :----------------------------------: |
+|     作用描述     | 用户发表意见反馈，管理员会从后台看到 |
+|     请求方式     |                 POST                 |
+| 传入 api 的参数  |    openid和String msg反馈消息内容    |
+|   返回数据格式   |                 Json                 |
+| 返回数据格式样例 |                                      |
 
 
 
@@ -594,15 +578,15 @@
 
 在接单人接受了发单人的订单后，应当将订单状态改变，并且将接受订单人的数据写入到数据库中，
 
-![image-20200614001037994](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200614001037994.png)
+![image-20200614001037994](image-20200614001037994.png)
 
-![image-20200614001904597](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200614001904597.png)
+![image-20200614001904597](image-20200614001904597.png)
 
 并且能够接受到订单状态改变的消息通知，反馈给前端，呈现给用户，让用户得知订单消息
 
-![](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200614001607981.png)
+![image-20200614001607981](image-20200614001607981.png)
 
-![image-20200614001630516](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200614001630516.png)
+![image-20200614001630516](image-20200614001630516.png)
 
 
 
@@ -610,23 +594,19 @@
 
 输入对应url和必要用户参数后，能够获得用户收货地址数据
 
-![image-20200614002642583](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200614002642583.png)
-
-
-
-
+![image-20200614002642583](image-20200614002642583.png)
 
 ### （二） 性能测试
 
+由于本系统采用分布式部署。在4核心的6700HQ CPU中运行该系统，最大PV(page view)即页面浏览量为5k每秒。在这样一颗CPU中可以同时运行400个左右的活跃用户。如果部署到更高级的服务器CPU中，则会更加强大。多台服务器可以进一步加快效率。
 
+![image-20200614195507122](image-20200614195507122.png)
 
 ### （三） 安全测试
 
+本文安全认证方法使用Oauth 2协议的Spring Security组件，对服务器端相互通信的API和小程序与服务器端的通信进行保护。
 
-
-
-
-## 五、总结与展望
+小程序访问服务器区分权限，如果没有相应权限，则无法访问，返回状态码401。
 
 
 
